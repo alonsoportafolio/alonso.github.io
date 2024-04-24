@@ -1,0 +1,321 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 20px;
+}
+
+.nav{
+    height: 60px;
+    background-color: #253266;
+    position: fixed;
+    width: 100%; 
+    z-index: 50;  
+}
+
+
+.nav-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+   
+    
+}   
+
+.nav__logo {
+    align-self: center;
+    text-decoration: none;
+}
+
+.nav__logo h1{
+    color: #11b6b1;
+    padding-left: 100px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-family: 'roboto';
+}
+
+.nav__enlace {
+    display: flex;
+    margin-right: 100px;
+    align-items: center;
+    justify-content: space-between;
+    width:200px;
+    list-style: none;
+    align-self: center;
+}
+
+.nav__enlace-responsive {
+    display: none;
+}
+
+.nav__enlace-check{
+    display: none;
+}
+
+.nav__enlace-menu{
+    display: none;
+    align-self: center;
+}
+
+.nav__enlace-menu i{
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+.nav__enlace a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 0.6rem;
+    transition: all 0.3s;
+}
+
+
+.nav__enlace a:hover{
+    color: rgb(255, 255, 255);
+    background-color: #51C8E0;
+    padding: 8px;
+    border-radius: 10px;
+    
+}   
+
+/*--------------header---------------*/
+.header__fondo {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: block;
+    background-color: #0e4166;
+    background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.header__content{
+    height: 450px;
+    width: 300px;
+    background: linear-gradient(#11b6b1 30%,#519BE0);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+ 
+.header__logo{
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    outline: 7px solid #53E09A;
+    box-shadow: rgb(255, 255, 255) 0 0 30px;
+    transform: translateY(-15%);
+}
+
+.header__logo img{
+    clip-path: circle(50% at 50% 50%);
+    width: 100%;
+}
+
+
+.header__info {
+    display: flex;
+    flex-direction: column;
+    transform: translatey(-5%);
+}
+
+.header__info__i1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header__info__i1 .a {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 900;
+    font-family: "Permanent Marker";
+    color: rgb(255, 255, 255);
+    display: inline;
+}
+
+.header__info__i1 .b {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: .8rem;
+    font-weight: 900;
+    transform: translateY(-10px);
+    
+}
+
+.header__info__i2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #53E09A;
+    text-shadow: rgb(0, 123, 255) 0 0 2px;
+}
+
+.header__info__i2__contacto{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    
+
+
+}
+
+.header__info__i2__contacto a{
+    text-decoration: none;
+    
+}
+.header__info__i2__contacto a i{
+    color: white    ;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid #253266;
+    border-radius: 50%;
+    transition: all 0.35s;
+}
+
+
+.header__info__i2__contacto a i:hover{
+    text-shadow: rgb(160, 160, 160) 0 0 30px,rgb(158, 158, 158) 0 0 30px,rgb(113, 113, 113) 0 0 30px,rgb(113, 113, 113) 0 0 30px;
+    color: #4dffa6;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    
+}
+
+/*----------------------------acerca----------*/
+
+.section1-acerca{
+    background: #11b6b1;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 1005;
+    height: 100vh;
+}
+
+
+/*----------------------------contacto---------*/
+
+
+
+.section2-contacto{
+    background: #53E09A;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 1005;
+    height: 100vh;
+}
+
+
+/*------------------------------------responsive------------*/
+
+@media screen and (max-width:600px) {
+    .nav__logo h1{
+        color: #11b6b1;
+        padding-left: 10px;
+        text-decoration: none;
+        font-size: 1.5em;
+        font-family: 'roboto';
+    }
+
+    .nav__enlace {
+        display: none;
+    }
+
+    .nav__enlace-menu{
+        display: flex;
+        align-items: center;
+        padding-right: 30px;
+    }
+
+    .nav__enlace-responsive{
+        display: flex;
+        position: fixed;
+        z-index: 100;
+        top: 60px;
+        height: calc(100vh - 60px);
+        width: 100%;
+        background: #0e4166 ;
+        color: white;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+        transition: clip-path 0.3s;
+    }
+
+    .nav__enlace-responsive a{
+        color: white
+    }
+
+    .nav__enlace-check:checked ~ .nav__enlace-responsive{
+        
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    
+    .nav__enlace-menu{
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+    
+
+
+
+    .header__content{
+        height: 480px;
+    }
+    .header__info__i2__contacto a i:hover{
+        text-shadow: 0;
+        color: #4dffa6;
+        text-decoration: none;
+        padding: 10px;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 50%;
+    }
+
+    .header__info__i2__contacto a i:active{
+        text-shadow: rgb(160, 160, 160) 0 0 30px,rgb(158, 158, 158) 0 0 30px,rgb(113, 113, 113) 0 0 30px,rgb(113, 113, 113) 0 0 30px;
+        color: #4dffa6;
+        text-decoration: none;
+        padding: 10px;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 50%;
+        
+    }
+    
+}
+
+@media screen and (min-height:750px) {
+    .header__content{
+        height: 580px;
+    }
+}

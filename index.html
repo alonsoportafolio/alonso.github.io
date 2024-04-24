@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio-Alonso</title>
+    <link rel="stylesheet" href="fonts/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="img/alonso-logo.ico" type="image/x-icon">
+    
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a class="nav__logo" href="#inicio">
+                <h1>Alonso</h1>
+            </a>
+            
+            <label class="nav__enlace-menu" for="nav__enlace-responsive"><i class="icon-menu"></i></label>
+            <input class="nav__enlace-check" type="checkbox" id="nav__enlace-responsive">
+            
+            <div class="nav__enlace-responsive">
+                <a href="#inicio">INICIO</a> 
+                <a href="#acerca">ACERCA</a> 
+                <a href="#contacto">CONTACTO</a>
+                
+                
+            </div>
+            <div class="nav__enlace">
+                <a href="#inicio">INICIO</a> 
+                <a href="#acerca">ACERCA</a> 
+                <a href="#contacto">CONTACTO</a> 
+            </div>
+            
+        </div>
+    </nav>
+    
+
+    <header id="inicio" class="header">
+
+
+        <svg class="header__fondo" version="1.1" xmlns="http://www.w3.org/2000/svg"
+		xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
+		<defs>
+			<linearGradient id="bg">
+				<stop offset="0%" style="stop-color:rgba(130, 158, 249, 0.06)"></stop>
+				<stop offset="50%" style="stop-color:rgba(76, 190, 255, 0.6)"></stop>
+				<stop offset="100%" style="stop-color:rgba(115, 209, 72, 0.2)"></stop>
+			</linearGradient>
+			<path id="wave" fill="url(#bg)" d="M-363.852,502.589c0,0,236.988-41.997,505.475,0
+	s371.981,38.998,575.971,0s293.985-39.278,505.474,5.859s493.475,48.368,716.963-4.995v560.106H-363.852V502.589z" />
+		</defs>
+		<g>
+			<use xlink:href='#wave' opacity=".3">
+				<animateTransform
+          attributeName="transform"
+          attributeType="XML"
+          type="translate"
+          dur="10s"
+          calcMode="spline"
+          values="270 230; -334 180; 270 230"
+          keyTimes="0; .5; 1"
+          keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+          repeatCount="indefinite" />
+			</use>
+			<use xlink:href='#wave' opacity=".6">
+				<animateTransform
+          attributeName="transform"
+          attributeType="XML"
+          type="translate"
+          dur="8s"
+          calcMode="spline"
+          values="-270 230;243 220;-270 230"
+          keyTimes="0; .6; 1"
+          keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+          repeatCount="indefinite" />
+			</use>
+			<use xlink:href='#wave' opacty=".9">
+				<animateTransform
+          attributeName="transform"
+          attributeType="XML"
+          type="translate"
+          dur="6s"
+          calcMode="spline"
+          values="0 230;-140 200;0 230"
+          keyTimes="0; .4; 1"
+          keySplines="0.42, 0, 0.58, 1.0;0.42, 0, 0.58, 1.0"
+          repeatCount="indefinite" />
+			</use>
+		</g>
+	</svg>
+
+        <div class="header__content">
+            <div class="header__logo">
+                <img src="img/alonso-logo.jpg" alt="">
+            </div>
+            <div class="header__info">
+                <div class="header__info__i1">
+                    <P class="a">ALONSO RIOS</P> <br>
+                    <p class="b">Docente de ciencias sociales </p>
+                </div>
+                <div class="header__info__i2">
+                    CONTACTO <br>
+                    <div class="header__info__i2__contacto">
+                        <a href=""><i class="icon-facebook"></i></a>
+                        <a href=""><i class="icon-whatsapp"></i></a>
+                        <a href=""><i class="icon-instagram"></i></a>
+                        <a href=""><i class="icon-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section id="acerca" class="section1-acerca">
+        <h2>ACERCA EN DESARROLLO</h2>
+    </section>
+    <section id="contacto" class="section2-contacto">
+        <h2>CONTACTO EN DESARROLLO</h2>
+    </section>
+
+</body>
+</html> 
